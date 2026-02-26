@@ -45,7 +45,7 @@ namespace
     Driver::Driver(MeterInfo &mi, DriverInfo &di) : MeterCommonImplementation(mi, di)
     {
         addNumericFieldWithExtractor(
-            "total_energy_consumption",
+            "total_energy_consumption_kwh",
             "The total energy consumption recorded by this meter.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
@@ -56,7 +56,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "current_power_consumption",
+            "current_power_consumption_kw",
             "Current power consumption.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Power,
@@ -67,7 +67,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_production",
+            "total_energy_production_kwh",
             "The total energy production recorded by this meter.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
@@ -77,7 +77,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "current_power_production",
+            "current_power_production_kw",
             "Current power production.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Power,
@@ -87,7 +87,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "voltage_at_phase_1",
+            "voltage_at_phase_1_v",
             "Voltage at phase L1.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Voltage,
@@ -99,7 +99,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "voltage_at_phase_2",
+            "voltage_at_phase_2_v",
             "Voltage at phase L2.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Voltage,
@@ -111,7 +111,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "voltage_at_phase_3",
+            "voltage_at_phase_3_v",
             "Voltage at phase L3.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Voltage,
@@ -132,7 +132,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_consumption_tariff_1",
+            "total_energy_consumption_tariff_1_kwh",
             "The total energy consumption recorded by this meter on tariff 1.",
             DEFAULT_PRINT_PROPERTIES, // ,
             Quantity::Energy,
@@ -144,7 +144,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_consumption_tariff_2",
+            "total_energy_consumption_tariff_2_kwh",
             "The total energy consumption recorded by this meter on tariff 2.",
             DEFAULT_PRINT_PROPERTIES, // ,
             Quantity::Energy,
@@ -156,7 +156,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_consumption_tariff_3",
+            "total_energy_consumption_tariff_3_kwh",
             "The total energy consumption recorded by this meter on tariff 3.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
@@ -168,7 +168,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_production_tariff_1",
+            "total_energy_production_tariff_1_kwh",
             "The total energy production recorded by this meter on tariff 1.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
@@ -178,7 +178,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_production_tariff_2",
+            "total_energy_production_tariff_2_kwh",
             "The total energy production recorded by this meter on tariff 2.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
@@ -188,7 +188,7 @@ namespace
             );
 
         addNumericFieldWithExtractor(
-            "total_energy_production_tariff_3",
+            "total_energy_production_tariff_3_kwh",
             "The total energy production recorded by this meter on tariff 3.",
             DEFAULT_PRINT_PROPERTIES,
             Quantity::Energy,
